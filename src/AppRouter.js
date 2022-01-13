@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
-import Dish from './Dish';
-import Dishes from './Dishes';
 import Home from './Home';
+import Dishes from './Dishes';
+import Dish from './Dish';
 
 
 

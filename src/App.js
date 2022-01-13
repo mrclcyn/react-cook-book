@@ -5,9 +5,9 @@ import Footer from './Footer';
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <AppRouter />
-      <Footer />
+          <NavBar />
+          <AppRouter />
+          <Footer />
     </div>
   );
 }
