@@ -1,4 +1,4 @@
-const Dish = () => {
+const Dish = ({recipes}) => {
     return(
         <div>
             Dish
