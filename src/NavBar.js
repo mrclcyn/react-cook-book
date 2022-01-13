@@ -1,6 +1,6 @@
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-const NavBar = () => {
+const NavBar = ({reicpes}) => {
     return(
         <nav className="navbar sticky-top navbar-expand-md navbar-light">
             <NavLink to="/">Home</NavLink>
