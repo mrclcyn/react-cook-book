@@ -21,7 +21,7 @@ const AppRouter = () => {
         client.getEntries()
         .then(response => setRecipes(response.items))
     }
-    // console.log(recipes);
+    // console.log(recipe);
 
     return(
         <>
