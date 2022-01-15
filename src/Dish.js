@@ -6,22 +6,18 @@ const Dish = ({ recipes }) => {
     let navigate = useNavigate()
 
     const { recipesId } = useParams()
+    // console.log(recipesId)
+// console.log(recipes)
+    const recipe = recipes.find((element) => element.fields.id === parseInt(recipesId));
 
-    //const recipesId = recipes.find((element) => element.items.fields.id === recipesId);//
-
-    //console.log(recipesId)//
+    console.log(recipe)
 
     return (
     
         <div>
-            {recipesId ? (
-                    <>
-                        <h1>{recipes.fields.title}</h1>
-                    </>
-                
-            ) : (
-            navigate("/dishes")
-            )}
+            
+            <h1>{recipe.fields.title}</h1>
+                 
         </div>
     )
 }

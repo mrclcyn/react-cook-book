@@ -12,7 +12,6 @@ const Dishes = ({ recipes }) => {
             {recipes.map((items) => {
                 return (
                         <>
-            
                             <Link to={`/dishes/${items.fields.id}`}>
                                 <h1>
                                     {items.fields.title} 
