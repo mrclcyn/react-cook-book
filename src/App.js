@@ -1,16 +1,25 @@
 import './App.css';
-import HomeCard from './components/HomeCard';
+import { Link } from 'react-router-dom';
 
-function App({recipes}) {
+function App({recipes, country, fields}) {
   // console.log(recipes);
   return (
     <div className="App">
       <h1>Cook and Travel</h1>
       <h3>Our recipes will surprise you!</h3>
-      <div className="container">
+      <div >
         { recipes.map((recipe, id) => {
           return(
-          <HomeCard country={recipe.fields.country} fields={recipe.fields} key={id} />
+            <div className="homeItem" key={id}>
+            <Link to="/dishes" state={recipe.fields.country}>
+              <div className="countryName">
+                {recipe.fields.country}
+              </div>
+              <div>
+                <img className="countryPic" src={recipe.fields.imageSrc} alt={recipe.fields.country} />
+              </div>
+              </Link>
+            </div>
 
         )})}
           
