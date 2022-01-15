@@ -17,21 +17,21 @@ const AppRouter = () => {
         fetchContentful()
     }, [])
 
-    const fetchContentful = () => {
-        client.getEntries()
-        .then(response => setRecipes(response.items))
+    const fetchContentful = async () => {
+        await client.getEntries()
+            .then(response => setRecipes(response.items))
     }
     // console.log(recipe);
 
-    return(
+    return (
         <>
-        <NavBar recipes={recipes} />
-        <Routes>
-            <Route path="/" element={<App recipes={recipes} />} />
-            <Route path="/dishes" element={<Dishes recipes={recipes} />} />
-            <Route path="/dishes/:recipesId" element={<Dish recipes={recipes} />} />
-        </Routes>
-        <Footer />
+            <NavBar recipes={recipes} />
+            <Routes>
+                <Route path="/" element={<App recipes={recipes} />} />
+                <Route path="/dishes" element={<Dishes recipes={recipes} />} />
+                <Route path="/dishe/:recipesId" element={<Dish recipes={recipes} />} />
+            </Routes>
+            <Footer />
         </>
     )
 }
