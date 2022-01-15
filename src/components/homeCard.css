@@ -1,0 +1,11 @@
+.homeItem {
+  width: 30%;
+  margin: 10px;
+  text-align: center;
+  /* line-height: 75px; */
+  /* font-size: 30px; */
+}
+
+.countryPic {
+  width: 100%;
+}

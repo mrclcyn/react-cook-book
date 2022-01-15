@@ -1,0 +1,22 @@
+.navBar {
+  background-color: #89c53f;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.logo {
+  width: 100px;
+}
+
+a {
+  font-family: Helvetica;
+  font-size: 28px;
+  color: white;
+  text-decoration: none;
+  padding: 0 10px 0 10px;
+}
+.active {
+  color: gray;
+}
