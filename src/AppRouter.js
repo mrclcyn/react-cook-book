@@ -21,19 +21,27 @@ const AppRouter = () => {
         await client.getEntries()
             .then(response => setRecipes(response.items))
     }
-    // console.log(recipe);
+    console.log(recipes);
 
+    if (!recipes) {
+        return(
+            <div className="loading">
+                Loading ...
+            </div>
+        )
+    } else {
     return (
         <>
             <NavBar recipes={recipes} />
             <Routes>
                 <Route path="/" element={<App recipes={recipes} />} />
                 <Route path="/dishes" element={<Dishes recipes={recipes} />} />
-                <Route path="/dishe/:recipesId" element={<Dish recipes={recipes} />} />
+                <Route path="/dishes/:recipesId" element={<Dish recipes={recipes} />} />
             </Routes>
             <Footer />
         </>
     )
+    }
 }
 
 export default AppRouter;
