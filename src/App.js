@@ -1,7 +1,6 @@
 import './App.css';
 
 function App({recipes}) {
-  console.log(recipes);
   return (
     <div className="App">
       <h1>Cook and Travel</h1>

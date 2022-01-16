@@ -1,13 +1,14 @@
 import { NavLink } from 'react-router-dom';
+import { Navbar } from 'react-bootstrap';
 
-const NavBar = ({reicpes}) => {
+const Header = ({reicpes}) => {
     return(
-        <nav className="navbar sticky-top navbar-expand-md navbar-light">
+        <Navbar>
             <NavLink to="/">Home</NavLink>
             <NavLink to="/dishes">Countries</NavLink>
-        </nav>
+        </Navbar>
         
     )
 }
 
-export default NavBar;
+export default Header;

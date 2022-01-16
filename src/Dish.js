@@ -11,7 +11,7 @@ const Dish = () => {
     const [recipes, setRecipes] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
-    const [lengthIng, setLengthIng] = useState(0);
+    //const [lengthIng, setLengthIng] = useState(0);
 
     //this length is for increasing the length of ingredients when we map thru array
     //it will then be used to pass to fetch quantity array
