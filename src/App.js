@@ -10,6 +10,7 @@ function App({ recipes, country, fields }) {
       <div classNme="home">
         {recipes.map((recipe, id) => {
           return (
+
             <div className="homeItem" key={id}>
               <div className="homeItemContent">
                 <Link to="/dishes" state={recipe.fields.country}>
