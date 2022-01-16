@@ -1,22 +1,50 @@
 .navBar {
+  display: flex;
+  align-items: center;
   background-color: #89c53f;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 3;
+  overflow: hidden;
 }
-
+.navRow {
+  display: inline-flex;
+}
 .logo {
   width: 100px;
 }
 
-a {
+.logoBtn {
+  display: inline-flex;
+  margin-right: 10vw;
+  -webkit-transition: opacity 1s;
+}
+.logoBtn:hover {
+  opacity: 0.3;
+  transition-duration: 1s;
+}
+
+.navBar > .countryBtns > .navRow > .navBtn {
   font-family: Helvetica;
-  font-size: 28px;
+  display: inline-flex;
+  font-size: 14px;
   color: white;
   text-decoration: none;
-  padding: 0 10px 0 10px;
+  text-transform: uppercase;
+  padding: 7px 15px 7px 15px;
+  vertical-align: middle;
+  background-color: #7bb13a;
+  border-radius: 5px;
+  margin: 5px 5px;
+  width: 100px;
 }
-.active {
-  color: gray;
+.navBtn > span {
+  width: 100px;
+  text-align: center;
+}
+
+.navBar > .countryBtns > .navRow > .navBtn:hover {
+  background-color: #ff7505;
+  transition-duration: 1s;
 }

@@ -84,7 +84,7 @@ const Dish = () => {
                       lengthIngredient = lengthIngredient + 1;
                       return (
                         <>
-                          <tr>
+                          <tr classNAme="tableRow">
                             <td>{ingredient}</td>
                             <td>{recipe.fields.quantity[lengthIngredient]}</td>
                           </tr>

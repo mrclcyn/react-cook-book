@@ -1,3 +1,6 @@
-embed{
-    height: 350px;
+embed {
+  height: 350px;
+}
+tbody {
+  background-color: rgba(0, 0, 0, 0.137);
 }
