@@ -1,52 +1,57 @@
 .App {
   text-align: center;
   position: relative;
-  top: 200px;
+  top: 110px;
   z-index: 1;
+  width: 100%;
+  padding: 0 150px;
+  /* min-height: 100%; */
+  padding-bottom: 200px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.countryPic {
-  width: 30%;
-  height: 30%;
-}
-
-.container {
+.home {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+.homeItem {
+  display: inline-block;
+  width: 300px;
+  padding: 0 10px 50px;
+}
+.homeItemContent {
+}
+
+.homeItemContent > a {
+  text-decoration: none;
+}
+
+.countryPic {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 1s;
+}
+.countryPic:hover {
+  opacity: 0.5;
+  transition-duration: 1s;
+}
+.countryName {
+  background-color: #89c53f;
+  height: 80px;
+  color: white;
+  font-size: 30px;
+  font-family: "Pacifico", cursive;
+}
+.cntryNm {
+  position: relative;
+  top: 20px;
+}
+
+.subTitle {
+  margin-bottom: 70px;
+  font-family: "Pacifico", cursive;
+}
+.cook {
+  padding-top: 100px;
+  font-family: "Pacifico", cursive;
 }
