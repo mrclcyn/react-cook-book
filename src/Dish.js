@@ -94,8 +94,11 @@ const Dish = () => {
                   </tbody>
                 </table>
               </div>
+
               <div className="col-md-4" style={{ textAlign: "justify" }}>
-                {recipe.fields.recipe.content[0].content[0].value}
+                {recipe.fields.recipe.content.map((recip) => {
+                  return <div>{recip.content[0].value};</div>;
+                })}
               </div>
             </div>
           </div>

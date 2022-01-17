@@ -5,6 +5,7 @@ import { Youtube } from "react-bootstrap-icons";
 import { Github } from "react-bootstrap-icons";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./footer.css";
 
 const Footer = () => {
   return (
